@@ -21,7 +21,7 @@ channel.send(`فدرالي فدرالي فدرالي فدرالي فدرالي �
 
 
 
-        var prefix = "!";
+        var prefix = "s";
     client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
@@ -31,7 +31,7 @@ channel.send(`فدرالي فدرالي فدرالي فدرالي فدرالي �
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "spam") {
+  if (command == "s") {
 if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR**');
 
 
